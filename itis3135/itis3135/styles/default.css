@@ -1,0 +1,180 @@
+header, footer {
+    text-align: center;
+}
+
+html {
+    background-color: #718F94; 
+}
+
+header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: brown;
+}
+
+main {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+h2 {
+    color: darkblue;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+p {
+    color: green;
+    font-size: 20px;
+}
+
+#dropdown {
+    color: white;
+    font-size: 20px;
+}
+
+label {
+    color: firebrick;
+    font-size: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+    border: none;
+    border-radius: 14px;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+hr {
+    border-color: crimson;
+    border-style: dashed;
+}
+
+footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.forms-header {
+    margin-left: 300px;
+}
+form {
+    margin-left: 300px;
+    display:block;
+}
+
+/* Table */
+table, th, td {
+    margin-left: 400px;
+    border: 1px solid;
+}
+ol, ul {
+    list-style-position: inside;
+    margin-left: 375px;
+}
+#complex-table tr:nth-child(odd) {
+    background-color: black;
+    color: white;
+}
+h3 {
+    color: darkmagenta;
+    font-weight: 100;
+    margin-left: 500px;
+}
+nav {
+    display: inline;
+}
+
+footer {
+    font-family: Arial;
+}
+figcaption {
+    font-weight: bold;
+}
+.tables-header {
+    margin-left: 435px;
+}
+#complex-table {
+    margin-left: 360px;
+}
+/* Intro Page */
+#picture-caption {
+    font-weight: 100;
+    font-style: italic;
+}
+ul {
+    text-align: left;
+    margin-left: 250px;
+}
+ul li ul {
+    text-align: left;
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: lightgrey;
+}
+a:hover {
+    color: darkblue;
+}
+a:active {
+    color: lightsalmon;
+}
+.image {
+    margin-left: 625px;
+}
+h2 {
+    margin-left: 700px;
+}
+figcaption {
+    margin-left: 550px;
+}
+/* Contract */
+#header-p {
+    color: black;
+    font-size: medium;
+    font-weight: 100;
+    margin-left: 100px;
+}
+/* Website Evaluation */
+#evaluation-header {
+    margin-left: 600px;
+}
+
+#youtube-p {
+    font-size: 18px;
+}
+#evaluation-p {
+    color: darkgreen;
+}
+
+#home-p {
+    margin-left: 650px;
+}
+
+h4 {
+    color: darkred;
+}
+/* First Scrupts */
+#align-h2-js {
+    margin-left: 475px;
+}
+#align-form-header, #penguin-years-header {
+    margin-left: 300px;
+}
+.additions {
+    margin-left: 300px;
+    margin-bottom: 50px;
+}
+#random-result {
+    margin-left: 400px;
+    display: flex;
+}

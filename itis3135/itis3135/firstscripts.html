@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="first-scripts" lang="en">
+<head>
+    <title>ITIS 3135 | Jacob Praskala's' Joyful Penguin | First Scripts</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <h1 id="intro-header">Hello, my name is Jacob Praskala (Joyful Penguin), and this is my ITIS3135 Webspace.</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="introduction.html">Introduction Page</a> |
+            <a href="contract.html">Contract</a> |
+            <a href="tables.html">Tables</a> |
+            <a href="forms.html">Forms</a> |
+            <a href="website_evaluations.html">Website Evaluations</a>
+        </nav>
+    </header>
+    <main>
+        <h2 id="align-h2-js">Activity 5: First JavaScripts.</h2>
+        <h3 id="correct-date">Today is 10:37am on Wednesday, 8 February, 2023</h3>
+        <h4 id="align-form-header">Enter the following information below.</h4>
+        <form action="#" target="_self">
+            <label for="name">Name: </label><br>
+            <input type="text" id="name" placeholder="Jacob" size="40" required><br>
+            <label for="feeling">How are you doing?</label><br>
+            <input type="text" id="feeling" placeholder="Good" size="40" required><br>
+            <br>
+            <button onclick="submitButton()" placeholder="submit" value="Submit">Submit</button>
+            <p><span id="information"></span></p>
+        </form>
+        <div class="additions">
+            <h4>It is recommended you try the buttons below.</h4>
+            <button id="secret" type="button" value="Click Here">Click Here to go to the introduction page</button>
+            <button id="penguins" type="button">Click here to learn more about penguins.</button><br><br>
+            <button onclick="image()" type="button">Get a new background image, or change it back to the old one.</button>
+            <button onclick="random_penguin()" type="button">Click to generate the name of a random penguin species.</button> <p><span id="random-result"></span></p>
+        </div>
+        <h4 id="penguin-years-header">Let's get your age in penguin years.</h4>
+        <form action="#" target="_self">
+            <label for="age">Enter your age:</label><br>
+            <input type="number" id="age" placeholder="23" min="0" size="40" required><br>
+            <br>
+            <button id="age-result" type="button">Get your age in penguin years!!!</button>
+        </form>
+    </main>
+    <footer>
+        <nav>
+            <a href="https://webpages.charlotte.edu/jpraskal/">CLT Website</a> | 
+            <a href="https://github.com/JPraskala">GitHub</a> | 
+            <a href="https://jpraskala.github.io/">GitHub Pages</a> | 
+            <a href="https://jpraskala.github.io/itis3135/">GitHub Course Page</a> | 
+            <a href="https://www.freecodecamp.org/JPraskala">freeCodeCamp</a> | 
+            <a href="https://www.codecademy.com/profiles/JPraskala">codeAcademy</a> | 
+            <a href="https://www.linkedin.com/in/jacob-praskala-48084421a/">LinkedIn</a>
+        </nav>
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+            </a>
+        </p>
+        <p>
+            <a href="https://validator.w3.org/check?uri=referer">
+                <img style="border:0;width:88px;height:31px" src="http://www.w3.org/Icons/valid-html20" alt="Valid HTML!" />
+            </a>
+        </p>
+        <p>Designed by <a href="praskalaenterprise.com/">Praskala Enterprise</a></p>   
+    </footer>
+    <script src="scripts/defaultscripts.js"></script>
+</body>
+</html>
