@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="Description" content="Testing website for accessibility.">
+
+  <!-- css -->
+  <link rel="stylesheet" href="Praskala-Activity_Accessibility.css">
+  <title>Test For Accessibility</title>
+
+</head>
+
+<body>
+  <header>
+    <h1>Candle Delight</h1>
+  </header>
+  <main>
+
+    <table class="center">
+
+      <caption>Candles</caption>
+      <thead>
+        <tr>
+          <!-- identify table headers <th> with scope attribute -->
+          <th scope="col">TYPE</th>
+          <th scope="col">PRODUCT</th>
+          <th scope="col">FEATURES</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Birthday Candles</th>
+          <td><img src="images/Birthday-Candles.jpg" alt="Birthday Candles"></td>
+          <td>
+            <ol>
+              <li>Comes in a range of fun, vibrant colors</li>
+              <li>Small and slender forms allow you to add as many or as few of them to a dessert as you desire</li>
+              <li>Offers a way to personalize customers' desserts on birthdays and anniversaries</li>
+            </ol>
+          </td>   
+        </tr>
+        <tr>
+            <th>Votives</th>
+            <td><img src="images/voltives.jpeg" alt="Voltives"></td>
+            <td>
+              <ol>
+                <li>Inexpensive and easy to use</li>
+                <li>Bigger than tea lights to provide longer burn times, making them better for longer events.</li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+              <th>Taper Candles</th>
+              <td><img src="images/taper-candles.jpg" alt="Taper Candles"></td>
+              <td>
+                <ol>
+                  <li>Commonly known as window candles</li>
+                  <li>Long, slender constructions add dimension to table tops</li>
+                </ol>
+              </td>
+            </tr>
+      </tbody>
+    </table>
+     <!--Add the form here-->
+     <h2>Enter your name and phone number to win a gift!</h2>
+    <form action="#" class="access-form">
+      <label for="name">Name: <input type="text" id="name" name="accessibility-form" aria-required="true"></label><br>
+      <label for="phone-number">Phone Number: <input type="tel" pattern="[0-9] {3}-[0-9] {3}-[0-9] {4}" id="phone-number" name="accessibility-form" aria-required="true"></label><br>
+      <input type="button" id="submit-button" name="accessibility-form" value="Submit Form">
+    </form>
+   
+    <div class="whitespace"></div>
+    <a href="https://teachaccess.github.io/tutorial/#/12">Click here to find more about accessibility</a>
+    <div class="whitespace"></div>
+
+    <a href="https://dequeuniversity.com/rules/axe/3.2/color-contrast"> Find out if your font
+      color and background color passes WCAG standard!</a>
+  </main>
+
+  <footer>
+    <nav>
+        <a target="_blank" href="https://webpages.charlotte.edu/jpraskal/">CLT Website</a> | 
+        <a target="_blank" href="https://github.com/JPraskala">GitHub</a> | 
+        <a target="_blank" href="https://jpraskala.github.io/">GitHub Pages</a> | 
+        <a target="_blank" href="https://jpraskala.github.io/itis3135/">GitHub Course Page</a> | 
+        <a target="_blank" href="https://www.freecodecamp.org/JPraskala">freeCodeCamp</a> | 
+        <a target="_blank" href="https://www.codecademy.com/profiles/JPraskala">codeAcademy</a> | 
+        <a target="_blank" href="https://www.linkedin.com/in/jacob-praskala-48084421a/">LinkedIn</a>
+    </nav>
+    <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+        </a>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+            <img style="border:0;width:88px;height:31px" src="http://www.w3.org/Icons/valid-html20" alt="Valid HTML!" />
+        </a>
+    </p>
+    <p>Designed by <a href="https://webpages.charlotte.edu/jpraskal/itis3135/praskalaenterprise.com/">Praskala Enterprise</a></p>
+  </footer>
+  <script src="Praskala-Activity-Accessibility.js"></script>
+</body>
+</html>

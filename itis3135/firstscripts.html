@@ -1,33 +1,30 @@
 <!DOCTYPE html>
-<html class="first-scripts" lang="en">
+<html id="first-scripts" lang="en">
 <head>
     <title>ITIS 3135 | Jacob Praskala's' Joyful Penguin | First Scripts</title>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/default.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
     <header>
-        <h1 id="intro-header">Hello, my name is Jacob Praskala (Joyful Penguin), and this is my ITIS3135 Webspace.</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="introduction.html">Introduction Page</a> |
-            <a href="contract.html">Contract</a> |
-            <a href="tables.html">Tables</a> |
-            <a href="forms.html">Forms</a> |
-            <a href="website_evaluations.html">Website Evaluations</a>
-        </nav>
+        <h1 id="intro-header">Placeholder</h1>
+        <nav id="siteLinks"></nav>
     </header>
     <main>
         <h2 id="align-h2-js">Activity 5: First JavaScripts.</h2>
-        <h3 id="correct-date">Today is 10:37am on Wednesday, 8 February, 2023</h3>
+        <h3 id="correct-date">Placeholder</h3>
         <h4 id="align-form-header">Enter the following information below.</h4>
-        <form action="#" target="_self">
+        <form action="#" name="main-form" target="_self">
             <label for="name">Name: </label><br>
-            <input type="text" id="name" placeholder="Jacob" size="40" required><br>
+            <input type="text" id="name" placeholder="Name" size="40" required><br>
             <label for="feeling">How are you doing?</label><br>
-            <input type="text" id="feeling" placeholder="Good" size="40" required><br>
+            <input type="text" id="feeling" placeholder="Mood" size="40" required><br>
             <br>
-            <button onclick="submitButton()" placeholder="submit" value="Submit">Submit</button>
+            <button onclick="submitButton()" type="submit" id="Submit">Submit</button>
+            <button id="reset" type="reset">Reset Form</button>
             <p><span id="information"></span></p>
         </form>
         <div class="additions">
@@ -37,12 +34,16 @@
             <button onclick="image()" type="button">Get a new background image, or change it back to the old one.</button>
             <button onclick="random_penguin()" type="button">Click to generate the name of a random penguin species.</button> <p><span id="random-result"></span></p>
         </div>
-        <h4 id="penguin-years-header">Let's get your age in penguin years.</h4>
+        <h4 id="penguin-years-header">Do you like Penguins?</h4>
         <form action="#" target="_self">
-            <label for="age">Enter your age:</label><br>
-            <input type="number" id="age" placeholder="23" min="0" size="40" required><br>
-            <br>
-            <button id="age-result" type="button">Get your age in penguin years!!!</button>
+           <input type="radio" name="opinion" id="yes">
+           <label for="yes">Yes</label><br>
+           <br>
+           <input type="radio" name="opinion" id="no">
+           <label for="no">No</label><br><br>
+           <button onclick="submitButton()" id="Submit-two" type="submit">Submit</button>
+           <button id="reset-two" type="reset">Reset Form</button>
+           <p><span id="answer"></span></p>
         </form>
     </main>
     <footer>
@@ -59,14 +60,16 @@
             <a href="https://jigsaw.w3.org/css-validator/check/referer">
                 <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
             </a>
-        </p>
-        <p>
-            <a href="https://validator.w3.org/check?uri=referer">
-                <img style="border:0;width:88px;height:31px" src="http://www.w3.org/Icons/valid-html20" alt="Valid HTML!" />
+            <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+                <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Validate webpage HTML!">
             </a>
         </p>
         <p>Designed by <a href="praskalaenterprise.com/">Praskala Enterprise</a></p>   
     </footer>
     <script src="scripts/defaultscripts.js"></script>
+    <script>		
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>      
 </body>
 </html>

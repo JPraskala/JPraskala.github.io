@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html class="home" lang="en">
+<html lang="en">
 <head>
     <link rel="stylesheet" href="styles/default.css">
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITIS3135 | Jacob Praskala's Joyful Penguin | Home </title>
+    <title>ITIS 3135 | Jacob Praskala's' Joyful Penguin | Polygons</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
@@ -14,8 +14,13 @@
         <nav id="siteLinks"></nav>
     </header>
     <main>
-        <h2 id="main-page-home">Home</h2>
-        <p id="home-p">Welcome to my site.</p>
+        <section class="polygon-main">
+            <h2>Activity 6: Name the Polygon</h2>
+            <button type="button" id="start-prompt">Click for a Question</button>
+            <p>
+                The work submitted here is my work. I have not copied and pasted code into these pages. I have gotten help from these people: Kris Tyte and Mytien Hoang and these sites: <a href="https://stackoverflow.com/questions/3510867/finding-the-type-of-an-input-element">stackoverflow</a>. - Jacob Praskala 2/24/2023 11:52 pm
+            </p>
+        </section>
     </main>
     <footer>
         <nav>
@@ -28,7 +33,7 @@
             <a href="https://www.linkedin.com/in/jacob-praskala-48084421a/">LinkedIn</a>
         </nav>
         <p>
-            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
                 <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
             </a>
             <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
@@ -38,9 +43,10 @@
         <p>Designed by <a href="praskalaenterprise.com/">Praskala Enterprise</a></p>
     </footer>
     <script src="scripts/defaultscripts.js"></script>
+    <script src="scripts/polygons.js"></script>
     <script>		
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-    </script>    
+    </script>       
 </body>
 </html>

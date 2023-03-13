@@ -1,0 +1,47 @@
+h2 {
+    margin-left: 500px;
+    margin-right: auto;
+}
+
+.calculator_keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-row-align: 1px;
+    background-color: #999;
+}
+
+.calculator_keys > * {
+    padding: .5em 1.3em;
+    position: relative;
+    text-align: center;
+}
+
+.calculator_keys > *:active::before, .calculator_keys > .is-depressed::before {
+    bottom: 0;
+    background-color: rgb(0, 0 , 0);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .3) inset;
+    content: "";
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+.calculator_display {
+    background-color: #222222;
+    color: #fff;
+    font-size: 1.7em;
+    padding: 0.5em 0.75em;
+    text-align: right;
+}
+
+.calculator_fcc {
+    border-radius: 12px;
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    max-width: 15em;
+    overflow: hidden;
+}

@@ -2,8 +2,10 @@ header, footer {
     text-align: center;
 }
 
-html {
+html, #first-scripts {
     background-color: #718F94; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
@@ -16,8 +18,27 @@ main {
     text-align: left;
 }
 
+#main-page-home, #contract-header {
+    margin-left: 700px;
+    margin-right: auto;
+}
+
+#second-intro-header {
+    margin-left: 600px;
+    margin-right: auto;
+}
+
+#fcc-header {
+    margin-left: 500px;
+    margin-right: auto;
+}
+
 h2 {
     color: darkblue;
+}
+
+h1 {
+    font-size:xx-large;
 }
 
 button {
@@ -39,12 +60,18 @@ p {
     font-size: 20px;
 }
 
+select {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
 label {
     color: firebrick;
     font-size: 20px;
 }
 
-input[type="text"], input[type="email"], input[type="number"] {
+input[type="text"], input[type="email"], input[type="number"], input[type="button"], #people {
     border: none;
     border-radius: 14px;
     padding: 8px;
@@ -132,13 +159,14 @@ a:active {
     margin-left: 625px;
 }
 h2 {
-    margin-left: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 figcaption {
     margin-left: 550px;
 }
 /* Contract */
-#header-p {
+.contract-p {
     color: black;
     font-size: medium;
     font-weight: 100;
@@ -165,7 +193,7 @@ h4 {
 }
 /* First Scrupts */
 #align-h2-js {
-    margin-left: 475px;
+    margin-left: 500px;
 }
 #align-form-header, #penguin-years-header {
     margin-left: 300px;
@@ -178,3 +206,40 @@ h4 {
     margin-left: 400px;
     display: flex;
 }
+
+.polygon-main {
+    margin-left: 300px;
+}
+
+input[type="button"]
+{
+    width: 100px;
+    display: inline-block;
+    padding: 20px 30px;
+    border: none;
+}
+#output {
+    width: 95%;
+    height: 100px;
+}
+#clear {
+    height: 150px;
+}
+.calculator {
+    border: none;
+}
+#calculator_try-header {
+    margin-left: 300px;
+    margin-right: auto;
+}
+
+
+@media (min-width: 576px) {}
+
+
+@media (min-width: 768px) {}
+
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}

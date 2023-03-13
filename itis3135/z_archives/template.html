@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template with Navigation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Template with Navigation</h1>
+        <nav id="siteLinks">Nav Links Here</nav>  
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dolore ut facilis voluptates facere provident possimus. Animi dolore, ex architecto illum magnam quam consequuntur, autem quod sunt, libero quibusdam earum.</p>
+        <p>Sapiente debitis quos maiores culpa a molestiae facere adipisci veritatis accusamus nobis nihil, accusantium odio esse cupiditate ipsa possimus ullam illo voluptatibus, modi inventore magnam sunt quibusdam voluptatum officiis! Modi?</p>
+        <p>Labore vel, optio dolor earum doloribus expedita dignissimos sequi accusantium ut ipsum eveniet aliquid perferendis commodi totam incidunt consequatur distinctio quisquam facere. Excepturi, dolor asperiores eaque ipsa in maiores autem?</p>
+        <p>Amet pariatur atque adipisci, veniam repellat nulla debitis deleniti dolorum ipsam architecto. Tempore quos culpa veniam quod molestiae qui assumenda obcaecati cumque et ex? Blanditiis, recusandae alias. Quas, facilis praesentium.</p>
+    </main>
+    <footer>Copyright + Some Stuff </footer>
+    <script>
+        $(function() {
+            console.log(location.pathname);
+            console.log(location.pathname.split("/").splice(-1));
+            const pathname = String(location.pathname.split("/").splice(-1));
+            const links = {
+                "1": {
+                    "url": "index.html",
+                    "text": "Home",
+                    "alt": "Example Homepage"
+                },
+                "2": {
+                    "url": "template.html",
+                    "text": "Template Page",
+                    "alt": "Example Homepage"
+                },
+                "3": {
+                    "url": "tables.html",
+                    "text": "HTML Tables",
+                    "alt": "Simple and Complex Table Demonstration"
+                },
+                "4": {
+                    "url": "forms.html",
+                    "text": "HTML Forms",
+                    "alt": "Form"
+                }
+            };
+            
+            const linkSeparator = " | ";
+            let htmlString = "";
+
+            for (var id in links) {
+                if (pathname === links[id]['url']) {
+                    htmlString += links[id]['text'];
+                } else {
+                    htmlString += '<a href=" ' + links[id]['url'] + ' ">' + links[id]['text'] + '</a>';
+                }
+                if (Number(id) < Object.keys(links).length) {
+                    htmlString += linkSeparator;
+                }
+            }
+
+            $('#siteLinks').html(htmlString);
+        });
+
+    </script>
+</body>
+</html>

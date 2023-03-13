@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/default.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS 3135 | Jacob Praskala's' Joyful Penguin | Calculator Try</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Placeholder</h1>
+        <nav id="siteLinks"></nav>
+    </header>
+    <main>
+        <h2 id="calculator_try-header">Activity 7: Walk Thru a Calculator Build Part 1</h2>
+        <section>
+            <h3>Try out the calculator</h3>
+            <table class="calculator">
+                <tr>
+                    <td colspan="3"><input type="text" id="output"></td>
+                    <td><input type="button" value="clear" id="clear"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="7" value="7" onclick="display_number('7')" onkeydown="key_function(key_value)"></td>
+                    <td><input type="button" id="8" value="8" onclick="display_number('8')" onkeydown="key_function(key_value)"></td>
+                    <td><input type="button" id="9" value="9" onclick="display_number('9')" onkeydown="key_function(key_value)"></td>
+                    <td><input type="button" id="/" value="/" name="operator" onclick="display_number('/')" onkeydown="key_function(key_value)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="4" value="4" onclick="display_number('4')" onkeydown="key_function(key_value)"></td>
+                    <td><input type="button" id="5" value="5" onclick="display_number('5')" onkeydown="key_function(key_value)"></td>
+                    <td><input type="button" id="6" value="6" onclick="display_number('6')" onkeydown="key_function(key_value)"></td>
+                    <td><input type="button" id="*" value="*" name="operator" onclick="display_number('*')" onkeydown="key_function(key_value)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="1" value="1" onclick="display_number('1')" onkeydown="key_function(key_value)"></td>
+                    <td><input type="button" id="2" value="2" onclick="display_number('2')" onkeydown="key_function(key_value)"></td>
+                    <td><input type="button" id="3" value="3" onclick="display_number('3')" onkeydown="key_function(key_value)"></td>
+                    <td><input type="button" id="-" value="-" name="operator" onclick="display_number('-')" onkeydown="key_function(key_value)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="0" value="0" onclick="display_number('0')" onkeydown="key_function(key_value)"></td>
+                    <td><input type="button" id="." value="." onclick="display_number('.')" onkeydown="key_function(key_value)"></td>
+                    <td><input type="button" value="=" id="answer" onkeydown="key_function(key_value)"></td>
+                    <td><input type="button" id="+" value="+" name="operator" onclick="display_number('+')" onkeydown="key_function(key_value)"></td>
+                </tr>
+            </table>
+            <!--I am getting stuck on outputting the answer to the calculator. I would use eval(), but I heard it's a huge security risk to use that function.-->
+            <p>
+                I have not copied and pasted code into these pages. I have gotten help from these sites: <a href="https://www.geeksforgeeks.org/html-calculator/">geeksforgeeks</a>. - Jacob Praskala 2/23/2023 9:35 pm
+            </p>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <a href="https://webpages.charlotte.edu/jpraskal/">CLT Website</a> | 
+            <a href="https://github.com/JPraskala">GitHub</a> | 
+            <a href="https://jpraskala.github.io/">GitHub Pages</a> | 
+            <a href="https://jpraskala.github.io/itis3135/">GitHub Course Page</a> | 
+            <a href="https://www.freecodecamp.org/JPraskala">freeCodeCamp</a> | 
+            <a href="https://www.codecademy.com/profiles/JPraskala">codeAcademy</a> | 
+            <a href="https://www.linkedin.com/in/jacob-praskala-48084421a/">LinkedIn</a>
+        </nav>
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+            </a>
+            <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+                <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Validate webpage HTML!">
+            </a>
+        </p>
+        <p>Designed by <a href="praskalaenterprise.com/">Praskala Enterprise</a></p>
+    </footer>
+    <script src="scripts/defaultscripts.js"></script>
+    <script src="scripts/calculator_try.js"></script>
+    <script>		
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>   
+</body>
+</html>
