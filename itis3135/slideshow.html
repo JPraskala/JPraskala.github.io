@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" href="styles/default.css">
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITIS 3135 | Jacob Praskala's' Joyful Penguin | Contract</title>
+    <title>ITIS 3135 | Jacob Praskala's' Joyful Penguin | Slideshow</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/slideshow.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
-
 <body>
     <header>
         <h1>Placeholder</h1>
@@ -22,24 +21,22 @@
         </nav>
     </header>
     <main>
-        <h2 id="contract-header">Contract</h2>
-
-        <p class="contract-p">
-            I, Jacob E. Praskala agree to abide by the terms in my Spring 2023 ITIS 3135 091
-            Web-Based Application Design and Development with my instructor, D.I. von Briesen.
-        </p>
-
-        <p class="contract-p">
-            I understand that all work that I do on my school and personal websites will be publicly available to the
-            world. I will not put information there that is inappropriate for schoolwork, or that I wish to keep
-            private.
-        </p>
-
-        <p class="contract-p">
-            Signed:
-
-            Jacob E. Praskala, 13 March 2023
-        </p>
+        <h2>Activity 9: Slideshow</h2>
+        <h3>The slideshow below has 6 images.</h3>
+        <div class="images">
+            <div class="images-outer">
+                <div class="images-inner">
+                    <img src="images/Slideshow/Me.JPG" alt="Me" class="current-image">
+                    <img src="images/Slideshow/Miko.jpg" alt="Miko">
+                    <img src="images/Slideshow/Scooby.JPG" alt="Scooby">
+                    <img src="images/Slideshow/Charlie.jpg" alt="Charlie">
+                    <img src="images/Slideshow/Scooby-Again.jpg" alt="Scooby Again">
+                    <img src="images/Slideshow/Charlie-Again.jpg" alt="Charlie Again">
+                </div>
+                <img src="images/Slideshow/Left_Arrow.png" id="left-arrow" class="button" alt="Left Arrow">
+                <img src="images/Slideshow/Right_Arrow.png" id="right-arrow" class="button" alt="Right Arrow">
+            </div>
+        </div>
     </main>
     <footer>
         <nav>
@@ -69,10 +66,6 @@
         <p>Designed by <a href="praskalaenterprise.com/">Praskala Enterprise</a></p>
     </footer>
     <script src="scripts/defaultscripts.js"></script>
-    <script>
-        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
-        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-    </script>
+    <script src="scripts/slideshow.js"></script>
 </body>
-
 </html>

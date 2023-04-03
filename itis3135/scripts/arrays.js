@@ -2,6 +2,17 @@ let people = []
 let salaries = []
 let salary = 0
 
+const names = {
+    1: 'Jacob',
+    2: 'Andrew',
+    3: 'Sophia',
+    4: 'John',
+    5: 'Amanda',
+    6: 'Amy',
+    7: 'Jack',
+    8: 'Emma'
+}
+
 document.getElementById('add-salaries').addEventListener('click', addSalary)
 document.getElementById('display-results').addEventListener('click', displayResults)
 document.getElementById("display-salaries").addEventListener("click", displaySalary)
@@ -14,39 +25,42 @@ window.onload = function()
 
 function addSalary() 
 {
+   
     const person = document.getElementById('people')
+    
     switch (person.value) 
     {
-        case 'Jacob':
+        case names[1]:
             salary = 98000
             break
-        case 'Andrew':
+        case names[2]:
             salary = 98500
             break
-        case 'Sophia':
+        case names[3]:
             salary = 99000
             break
-        case 'John':
+        case names[4]:
             salary = 97000
             break
-        case "Amanda":
+        case names[5]:
             salary = 99500
             break
-        case "Amy":
+        case names[6]:
             salary = 100000
             break
-        case "Jack":
+        case names[7]:
             salary = 100500
             break
-        case "Emma":
+        case names[8]:
             salary = 101000
             break
         default:
             salary = 0
             break
+            
     }
 
-    if (person.value != '' && typeof(salary) == 'number' && salary > 0) 
+    if (person.value.length > 0 && typeof(salary) == 'number' && salary > 0) 
     {
         people.push(person.value)
         salaries.push(salary)
@@ -57,6 +71,7 @@ function addSalary()
     {
         alert('Please select a person')
     }
+
 }
 
 function displayResults() 

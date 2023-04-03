@@ -1,0 +1,68 @@
+:root {
+    --textcolor: white;
+    --headercolor: rgb(60, 175, 100);
+    --h2color: rgb(115, 226, 3);
+}
+
+html {
+    background-color: purple;
+}
+
+header, footer {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--headercolor);
+}
+
+h2 {
+    color: var(--h2color);
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: auto;
+    color: var(--textcolor);
+}
+
+p {
+    text-indent: 13px;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: lightblue;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: green;
+}
+
+footer {
+    margin-bottom: 0;
+}
+
+.container {
+    margin-left: 15px;
+    margin-right: auto;
+}
+
+.headers {
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    margin-left: 250px;
+}
+
+.logo {
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 12px;
+}

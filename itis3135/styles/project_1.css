@@ -1,0 +1,40 @@
+main {
+    margin-right: auto;
+}
+
+main h2 {
+    margin-left: 640px;
+}
+
+main h3 {
+    margin-left: 300px;
+}
+
+main p {
+    margin-left: 40vh;
+    text-indent: 50px;
+}
+
+main figure #wireframe {
+    width: 60%;
+    height: 60%;
+    margin-left: 250px;
+}
+
+main figure #wireframe-caption {
+    margin-left: 450px;
+}
+
+main figure #map {
+    width: 50%;
+    height: 50%;
+    margin-left: 255px;
+}
+
+main figure figcaption #link {
+    font-weight: normal;
+}
+
+main section .pages h4 {
+    margin-left: 23vw;
+}

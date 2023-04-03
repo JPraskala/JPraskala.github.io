@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/contact_us.css">
+</head>
+<body>
+    <header>
+        <nav id="pages"></nav>
+        <div class="headers">
+            <h1>&nbsp;</h1>
+            <img src="images/pexels-chepté-cormani-1416530.jpg" alt="Phone" class="logo">
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form action="#" class="contact-form" target="_self">
+                <h2>Type in your Information Below</h2>
+                <label for="name">Name: <input type="text" id="name" name="form" required></label><br>
+                <label for="email">Email: <input type="email" id="email" name="form" required></label><br>
+                <label for="number">Phone Number (optional): <input type="tel" pattern="[0-9] {3}-[0-9] {3}-[0-9] {4}" name="form" id="number"></label><br>
+                <label for="description">What is your Question?</label>
+                <textarea rows="10" cols="20" id="description" required></textarea><br>
+                <button type="submit" class="submit">Submit</button>
+            </form>
+            <p id="result">&nbsp;</p>
+        </div>
+    </main>
+    <footer>
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+            </a>
+            <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+                <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Validate webpage HTML!">
+            </a>
+        </p>
+    </footer>
+    <script src="scripts/default.js"></script>
+    <script src="scripts/contact_us.js"></script>
+</body>
+</html>

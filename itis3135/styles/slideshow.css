@@ -1,0 +1,49 @@
+h2, h3 {
+    margin-left: 600px;
+    margin-right: auto;
+}
+
+main img {
+    max-width: 100%;
+    max-height: 120vh;
+    display: block;
+    height: auto;
+}
+
+.images {
+    width: 550px;
+    margin: 45px auto;
+    overflow: hidden;
+}
+
+.images-inner {
+    width: 490px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    padding: 4px;
+    border: darkred 2px solid;
+}
+
+.images-inner img {
+    display: none;
+    width: 490px;
+    height: 400px;
+}
+
+.images-inner .current-image {
+    display: inline-block;
+}
+
+.button {
+    width: 20%;
+    float: left;
+    cursor: pointer;
+    position: relative;
+    z-index: 4;
+}
+
+#right-arrow {
+    margin-left: 280px;
+}

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Praskala's Hobby Page</title>
+    <style>
+        html {
+            background-color: rgb(225, 118, 165);
+        }
+        header, footer {
+            text-align: center;
+        }
+        header {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(10, 81, 29);
+        }
+        main {
+            margin-right: auto;
+        }
+        li {
+            display: inline;
+            padding-left: 5px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        a:link, a:visited {
+            color: darkred;
+        }
+        a:hover {
+            color: darkblue;
+        }
+        a:active {
+            color: darkgreen;
+        }
+        h2 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 47.43vw;
+            padding-top: 10px;
+            color: rgb(10, 38, 82);
+        }
+        h3 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 30vw;
+            padding-top: 10px;
+        }
+        p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-indent: 0.8cm;
+            margin-left: 30.1vw;
+            line-height: 2;
+        }
+        ul {
+            list-style-position: inside;
+        }
+        ul li {
+            display: block;
+            padding-top: 2ch;
+            margin-left: 47ch;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #info {
+            text-indent: 0;
+        }
+        #home-image {
+            margin-left: 27vw;
+        }
+        h4 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 61vh;
+        }
+        figcaption {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #home-caption {
+            margin-left: 35vi;
+        }
+        .footer-elements {
+            margin-left: -68px;
+        }
+        #my-image {
+            margin-left: 56dvb;
+        }
+        #about-caption {
+            margin-left: 32vi;
+        }
+        .large-header {
+            margin-left: 40vw;
+        }
+        #barbell {
+            margin-left: 415px;
+        }
+        #when-caption {
+            margin-left: 40vw;
+        }
+        .gym-image {
+            margin-left: 56.5vh;
+        }
+        #medium-header {
+            margin-left: 44vw;
+        }
+        iframe {
+            margin-left: 460px;
+        }
+        .why-image {
+            margin-left: 27vw;
+        }
+        #why-caption {
+            margin-left: 31vw;
+        }
+        .motivation-image {
+            margin-left: 56vh;
+        }
+        #motivation-caption {
+            margin-left: 74vh;
+        }
+        
+        @media (max-width: 576px) {
+            header, footer {
+                margin-left: 155px;
+            }
+            ul li {
+                margin-left: 105px;
+            }
+            #home-image {
+                margin-left: 22vw;
+            }
+            #my-image {
+                margin-left: 15dvb;
+            }
+            #barbell {
+                margin-left: 100px;
+                padding-right: 15px;
+            }
+            .gym-image {
+                margin-left: 15.5vh;
+            }
+            .motivation-image {
+                margin-left: 15vh;
+                padding-right: 10px;
+            }
+            #motivation-caption {
+                margin-left: 32vh;
+            }
+        }
+
+        @media (min-width: 576px) and (max-width: 768px) {
+            header, footer {
+                margin-left: 70px;
+            }
+            ul li {
+                margin-left: 185px;
+            }
+            #home-image {
+                margin-left: 24.8vw;
+            }
+            #my-image {
+                margin-left: 24dvb;
+            }
+            #barbell {
+                margin-left: 195px;
+                padding-right: 15px;
+            }
+            #when-caption {
+                margin-left: 48vw;
+            }
+            .gym-image {
+                margin-left: 25.5vh;
+            }
+            iframe {
+                margin-left: 230px;
+            }
+            .why-image {
+                margin-left: 25vw;
+            }
+            .motivation-image {
+                margin-left: 25vh;
+                padding-right: 10px;
+            }
+            #motivation-caption {
+                margin-left: 40vh;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 992px) {
+            header, footer {
+                margin-left: 100px;
+            }
+            ul li {
+                margin-left: 240px;
+            }
+            #home-image {
+                margin-left: 24.8vw;
+            }
+            #my-image {
+                margin-left: 34dvb;
+            }
+            #barbell {
+                margin-left: 245px;
+                padding-right: 15px;
+            }
+            #when-caption {
+                margin-left: 48vw;
+            }
+            .gym-image {
+                margin-left: 33.5vh;
+            }
+            iframe {
+                margin-left: 285px;
+            }
+            .why-image {
+                margin-left: 25vw;
+            }
+            .motivation-image {
+                margin-left: 32vh;
+                padding-right: 10px;
+            }
+            #motivation-caption {
+                margin-left: 48vh;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            
+        }
+    </style>
+</head>
+<body onload="displayPage('home')">
+    <header>
+        <h1>Do you like Exercising?</h1>
+        <nav> 
+            <a href="#" onclick="displayPage('home')">Home</a> |
+            <a href="#" onclick="displayPage('about')">About Me</a> |
+            <a href="#" onclick="displayPage('when')">When</a> |
+            <a href="#" onclick="displayPage('where')">Where</a> |
+            <a href="#" onclick="displayPage('why')">Why</a> |
+            <a href="#" onclick="displayPage('how')">How</a> 
+        </nav>
+    </header>
+    <main>
+        <section class="content" id="home">
+            <h2>Home</h2>
+            <h3>What do I like about exercising?</h3>
+            <p>
+                I like exercising because it helps relieve stress inside me, and it gets my day started.
+                Science shows there are many benefits to exercising, and I recommend for everyone to get 
+                some kind of physical activity. Whether it is running, strength training, or even walking, 
+                exericisng will improve your mood and make you feel more energetic.
+            </p>
+            <h3>What are the benefits of exercising?</h3>
+            <ul id="benefits">
+                <li>Exercising improves your mood</li>
+                <li>Boosts Energy</li>
+                <li>Promotes Better Sleep</li>
+                <li>Exercising can be fun</li>
+            </ul>
+            <p id="info">For more information, <a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/exercise/art-20048389" target="_blank">check out this page.</a></p>
+            <figure>
+                <img id="home-image" src="images/pexels-andrea-piacquadio-3757957.jpg" alt="person exercising">
+                <figcaption id="home-caption">Exercise Today!!!</figcaption>
+                <!--https://www.pexels.com/photo/photo-of-person-using-treadmill-3757957/-->
+            </figure>
+        </section>
+        <section class="content" id="about">
+            <h2>About Me</h2>
+            <figure>
+                <img id="my-image" src="images/picture.JPG" alt="me">
+                <figcaption id="about-caption">A picture of me.</figcaption>
+            </figure>
+            <h3>How long have I been exercising?</h3>
+            <p>
+                I have been exercising daily since I was in high school. At first, I started only taking 
+                my dogs for walks around my neighborhood, but overtime, I started to incorporate strength 
+                training into my routine too. I enjoy my weekly exercising schedule.
+            </p>
+            <h3>What does my weekly schedule look like?</h3>
+            <p>
+                My weekly schedule consists of walking at least five days per week and doing strength 
+                training at least three days per week. I try to do my strength training on Mondays, Wednesdays, and 
+                Fridays for consistency. Having a consistent schedule helps me remember when I need to exercise, and if 
+                I should walk or do strength training.
+            </p>
+            <h3>Would I consider adding in anything else to my schedule?</h3>
+            <p>
+                I think I could add running to my schedule. I used to run when I was in high school, 
+                but I do not do it as consistently as I did before. I am hoping sometime this year I can 
+                get back into running especially because I have a new puppy now, and he loves to run. 
+            </p>
+        </section>
+        <section class="content" id="when">
+            <h2 class="large-header">When can you start Exercising?</h2>
+            <h3>During the morning.</h3>
+            <p>
+                You can exercise if you have during the morining. In fact, if exercising is the first thing you do 
+                when you wake up, it can get your entire day started. I recommend exercising in the morning if you can. 
+                It will make you feel more awake and energetic throughout your day.
+            </p>
+            <h3>What if you cannot exercise during the morning?</h3>
+            <p>
+                If you cannot exercise during the morning, then that is fine. You can still exercise later in the day 
+                giving you the same benefits. There have been times when I had to exercise in the afternoon or in the 
+                evening due to my work schedule. However, if I can exercise in the morning, I will do that instead.
+            </p>
+            <p>
+                Click on this <a href="https://www.piedmont.org/living-better/5-benefits-of-morning-exercise">link</a> for more information on 
+            the benefits of exercising in the morning.
+            </p>
+            <figure>
+                <img id="barbell" src="images/pexels-victor-freitas-841130.jpg" alt="barbell">
+                <figcaption id="when-caption">Don't wait start Exercising today!!!</figcaption>
+                <!--https://www.pexels.com/photo/person-holding-barbell-841130/-->
+            </figure>
+        </section>
+        <section class="content" id="where">
+            <h2 class="large-header">Where can you Exercise?</h2>
+            <h3>At Home.</h3>
+            <p>
+                One option is to simply exercise at your house if you can. This is what I do, and 
+                it helps that I do not have to drive anywhere just to exercise. If you have a pair of dumbbells, 
+                then you can easily do a workout in your own place of living.
+            </p>
+            <h3>At a Gym.</h3>
+            <p>
+                Going to a gym is another great option. There is likely a gym in your area, and 
+                they have the equipment you need to get started on exercising. If you prefer to not 
+                workout at your home, then you can become a member at your local gym instead.
+                Some gyms are better than others so it is recommended to do some research.
+            </p>
+            <figure>
+                <img class="gym-image" src="images/pexels-ivan-samkov-4162449.jpg" alt="Gym">
+                <figcaption class="gym-image">Going to the Gym is also benficial!!!</figcaption>
+                <!--https://www.pexels.com/photo/black-punching-bag-4162449/-->
+            </figure>
+            <h3>Conclusion.</h3>
+            <p>
+                Overall, it does not matter where you get your physical activity. However, what does matter is 
+                if you are getting any physical activity at all. The best advice I can give is pick a location and 
+                start building a schedule you can follow daily.
+            </p>
+        </section>
+        <section class="content" id="why">
+            <h2 class="large-header" id="medium-header">Why Exercise?</h2>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/XqTcye_acTI"></iframe>
+            <h3>Exercise is proven to have many benefits!</h3>
+            <p>
+                The main reason to exercise is for your health. Studies show exercising has many benefits 
+                such as reducing your anxiety, increasing your energy, making you feel more awake, improve your ability 
+                to focus, and more. Not exercising to lead to a greater risk of cancer and studies show that people who do 
+                not exercise have a worse mortality rate. It is widely recommended to exercise at least five days per week.
+            </p>
+            <figure>
+                <img class="why-image" src="images/pexels-mikhail-nilov-6740756.jpg" alt="Benefits">
+                <figcaption class="why-image" id="why-caption">Exercising provides many benefits!!!</figcaption>
+                <!--https://www.pexels.com/photo/woman-rolling-a-yoga-mat-6740756/-->
+            </figure>
+        </section>
+        <section class="content" id="how">
+            <h2 class="large-header">How to get started Exercising</h2>
+            <h3>Here is what I recommend to get started.</h3>
+            <ul>
+                <li>Develop a schedule</li>
+                <li>Get started on an exercise program</li>
+                <li>Have a consistent sleep schedule</li>
+                <li>Develop a good diet</li>
+                <li>Start slow and work your way up</li>
+            </ul>
+            <h3>It is a Process.</h3>
+            <p>
+                Everybody starts from somewhere. My number one advice is to start with something you know 
+                you can handle and work your way up when you get used to it. If you try to do too much,
+                then you will likely injure yourself. Additionally, it is vital to have a good diet. 
+                You cannot workout a bad diet. If you have a good diet and a good workout routine, then 
+                you will see significant improvements in your well-being.
+            </p>
+            <h3>How to Motivate Yourself.</h3>
+            <p>
+                My tip on this is to wake up every morning and tell yourself that you are 
+                going to get this workout in. Start on it as soon as you can because if you procrastinate, then 
+                the chances of you getting a workout in decrease. If you have a plan and stick with it, then you will 
+                feel much better about yourself.
+            </p>
+            <figure>
+                <img class="motivation-image" src="images/pexels-wellness-gallery-catalyst-foundation-12086686.jpg" alt="Motivation">
+                <figcaption class="motivation-image" id="motivation-caption">You can do it!!!</figcaption>
+                <!--https://www.pexels.com/photo/elderly-woman-in-gray-tank-top-and-leggings-exercising-12086686/-->
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p class="footer-elements">Designed by <a href="https://webpages.charlotte.edu/jpraskal/itis3135/praskalaenterprise.com/">Praskala Enterprise</a></p>
+        <p class="footer-elements">
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+            </a>
+            <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+                <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Validate webpage HTML!">
+            </a>
+        </p>
+    </footer>
+    <script>
+        function displayPage(page) 
+        {
+            const sections = document.getElementsByClassName('content')
+    
+            for (let i = 0; i < sections.length; i++) 
+            {
+                if (sections[i].id == page) 
+                {
+                    sections[i].style.display = 'inherit'
+                }
+                else 
+                {
+                    sections[i].style.display = 'none' 
+                }        
+            }
+        }
+    </script>
+</body>
+</html>

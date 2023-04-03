@@ -1,0 +1,19 @@
+main .contact-form {
+    margin-left: 50vh;
+    display: grid;
+}
+
+input {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+.submit {
+    cursor: pointer;
+    width: 15%;
+    height: 90%;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}

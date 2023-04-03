@@ -70,17 +70,17 @@ if (path == "firstscripts.html")
         window.open("https://www.antarctica.gov.au/about-antarctica/animals/penguins/")
     })
 
-    let toggle = "original-background"
+    let toggle = 0
 // Source for image: https://www.pexels.com/photo/close-up-photography-of-penguin-on-snow-86405/
 function image() {
     let backgroundStatus = document.getElementById("first-scripts")
     switch (toggle) {
-        case 'original-background':
-            toggle = 'new-background'
+        case 0:
+            toggle = 1
             backgroundStatus.style.background = "url('images/penguin.jpg')"
             break
-        case 'new-background':
-            toggle = 'original-background'
+        case 1:
+            toggle = 0
             backgroundStatus.style.background = "#718F94"
             break
         default:
@@ -168,6 +168,16 @@ $(function() {
             "url": "arrays.html",
             "text": "Arrays",
             "alt": "Arrays"
+        },
+        "12": {
+            "url": "slideshow.html",
+            "text": "Slideshow",
+            "alt": "Slideshow"
+        },
+        "13": {
+            "url": "project_1.html",
+            "text": "Project One",
+            "alt": "Project One"
         }
     };
     
