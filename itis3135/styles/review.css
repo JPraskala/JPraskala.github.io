@@ -1,0 +1,28 @@
+h2 {
+    margin-left: 575px;
+    margin-right: auto;
+}
+
+#review1 {
+    margin-left: 320px;
+    border: none;
+}
+
+#caption1 {
+    margin-left: 625px;
+}
+
+#evaluation {
+    margin-left: 75px;
+    border: 1px solid black;
+    background-color: lightskyblue;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-left: 290px;
+}
+
+figcaption {
+    margin-left: 700px;
+}

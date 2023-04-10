@@ -178,6 +178,16 @@ $(function() {
             "url": "project_1.html",
             "text": "Project One",
             "alt": "Project One"
+        },
+        "14": {
+            "url": "review1.html",
+            "text": "Review 1",
+            "alt": "Review 1"
+        },
+        "15": {
+            "url": "review2.html",
+            "text": "Review 2",
+            "alt": "Review 2"
         }
     };
     
