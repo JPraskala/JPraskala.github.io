@@ -13,14 +13,7 @@
     <header>
         <h1>Placeholder</h1>
         <nav id="siteLinks"></nav> <br> <br>
-        <nav>
-            <a href="stuff/MYWEBP@GE.htm">Bad Webpage</a> |
-            <a href="Exercise/Praskala-Activity_Accessibility.html">Accessibility</a> |
-            <a href="hobby/">Hobby</a> |
-            <a href="client/index.html">Client</a> |
-            <a href="Exercise/Activity11/Praskala-Activity11.html">Accordion Widget</a> |
-            <a href="Exercise/Activity12/Praskala-Activity12.html">BxSlider</a>
-        </nav>
+        <nav id="secondary"></nav>
     </header>
     <main>
         <h2>Activity 9: Slideshow</h2>
@@ -41,33 +34,16 @@
         </div>
     </main>
     <footer>
-        <nav>
-            <a href="https://webpages.charlotte.edu/jpraskal/">CLT Website</a>
-            |
-            <a href="https://github.com/JPraskala">GitHub</a>
-            |
-            <a href="https://jpraskala.github.io/">GitHub Pages</a>
-            |
-            <a href="https://jpraskala.github.io/itis3135/">GitHub Course Page</a>
-            |
-            <a href="https://www.freecodecamp.org/JPraskala">freeCodeCamp</a>
-            |
-            <a href="https://www.codecademy.com/profiles/JPraskala">codeAcademy</a>
-            |
-            <a href="https://www.linkedin.com/in/jacob-praskala-48084421a/">LinkedIn</a>
-        </nav>
-        <p>
-            <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
-                    alt="Valid CSS!" />
-            </a>
-            <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-                <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Validate webpage HTML!">
-            </a>
-        </p>
-        <p>Designed by <a href="praskalaenterprise.com/">Praskala Enterprise</a></p>
+        <nav id="externalLinks"></nav>
+        <p id="validation"></p>
+        <p id="firm-certification"></p>
     </footer>
     <script src="scripts/defaultscripts.js"></script>
     <script src="scripts/slideshow.js"></script>
+    <script src="scripts/footer.js"></script>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
 </body>
 </html>

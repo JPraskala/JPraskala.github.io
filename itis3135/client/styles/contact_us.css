@@ -1,5 +1,6 @@
 main .contact-form {
     margin-left: 50vh;
+    margin-right: 50vh;
     display: grid;
 }
 
@@ -9,11 +10,12 @@ input {
     border-radius: 10px;
 }
 
-.submit {
+.form {
     cursor: pointer;
     width: 15%;
     height: 90%;
     border-radius: 10px;
     background-color: black;
     color: white;
+    display: inline;
 }

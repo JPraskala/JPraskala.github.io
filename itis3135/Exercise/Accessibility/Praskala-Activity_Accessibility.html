@@ -98,8 +98,12 @@
           <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Validate webpage HTML!">
       </a>
     </p>
-    <p>Designed by <a href="https://webpages.charlotte.edu/jpraskal/itis3135/praskalaenterprise.com/">Praskala Enterprise</a></p>
+    <p>Designed by <a href="https://webpages.charlotte.edu/jpraskal/itis3135/praskalaenterprise.com/">Praskala Enterprise</a>, <a href="https://www.freecodecamp.org/certification/JPraskala/responsive-web-design">Certified in HTML and CSS</a></p>
   </footer>
   <script src="Praskala-Activity-Accessibility.js"></script>
+  <script>
+    document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+</script>
 </body>
 </html>

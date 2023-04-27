@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Readmore.js/2.2.0/readmore.min.js"></script>
     <link rel="stylesheet" href="styles/default.css">
     <link rel="stylesheet" href="styles/home.css">
 </head>
@@ -22,7 +23,7 @@
         <div class="container">
             <section id="welcome">
                 <h2>Welcome</h2>
-                <p>
+                <p class="paragraph">
                     Welcome to Jacob's PyLearn. This site will consist of you learning the Python programming language.
                     Python is one of my favorite languages, and I am excited to teach you about the wonderful features this 
                     language has. Throughout this site will consist of many topic such as data types, if/else statements, 
@@ -32,7 +33,7 @@
             </section>
             <section id="about-python">
                 <h2>About Python</h2>
-                <p>
+                <p class="paragraph">
                     Python is an open-source language that is free to use. It includes many packages such as Numpy, 
                     Flask, Pandas, and more. In fact, Python is the number one language for Artificial Intelligence. 
                     The language can also be used for backend development, gaming, engineering, etc. It is a begineer friendly language 
@@ -42,7 +43,7 @@
             </section>
             <section id="expect">
                 <h2>What to Expect</h2>
-                <p>
+                <p class="paragraph">
                     This website will have multiple pages dedicated to the Python language. You will create an account, and your 
                     progress will be tracked via this account. There will be a page on data types for example and loops. Completing each page 
                     will get you closer to understanding Python. I recommend taking your time with the exercises and try to understand what each 
@@ -52,15 +53,15 @@
         </div>
     </main>
     <footer>
-        <p>
-            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
-            </a>
-            <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-                <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Validate webpage HTML!">
-            </a>
-        </p>
+        <p id="client-validation"></p>
+        <p id="firm-certification-client"></p>
     </footer>
     <script src="scripts/default.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/client_footer.js"></script>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
 </body>
 </html>

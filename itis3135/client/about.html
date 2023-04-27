@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="styles/default.css">
 </head>
-<body onload="displayPage('about')">
+<body>
     <header>
         <nav id="pages"></nav>
         <div class="headers">
@@ -18,34 +18,36 @@
     </header>
     <main>
         <div class="container">
-            <section id="why">
-                <h2>Why did I decide to start this?</h2>
-                <p>
-                    I decided to start this site for the purpose of teaching individuals the Python programming 
-                    language. It is one of the most common language in the Computer Science Field, and it is largely used 
-                    for a variety of tasks. I am thrilled to teach this language to you, and I hope you learn something.
-                </p>
-            </section>
-            <section id="questions">
-                <h2>What if I have a question?</h2>
-                <p>
-                    If you have a question, then check out the FAQ page linked at the top of the page. Here, you can look at questions 
-                    that are commonly asked. If that does not answer your question, then you can contact us by submitting your question 
-                    via a form. 
-                </p>
-            </section>
+            <div class="flowType">
+                <section id="why">
+                    <h2>Why did I decide to start this?</h2>
+                    <p>
+                        I decided to start this site for the purpose of teaching individuals the Python programming 
+                        language. It is one of the most common language in the Computer Science Field, and it is largely used 
+                        for a variety of tasks. I am thrilled to teach this language to you, and I hope you learn something.
+                    </p>
+                </section>
+                <section id="questions">
+                    <h2>What if I have a question?</h2>
+                    <p>
+                        If you have a question, then check out the FAQ page linked at the top of the page. Here, you can look at questions 
+                        that are commonly asked. If that does not answer your question, then you can contact us by submitting your question 
+                        via a form. 
+                    </p>
+                </section>
+            </div>
         </div>
     </main>
     <footer>
-        <p>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
-        </a>
-        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-            <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Validate webpage HTML!">
-        </a>
-    </p>
+        <p id="client-validation"></p>
+        <p id="firm-certification-client"></p>
     </footer>
     <script src="scripts/default.js"></script>
+    <script src="scripts/about.js"></script>
+    <script src="scripts/client_footer.js"></script>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
 </body>
 </html>

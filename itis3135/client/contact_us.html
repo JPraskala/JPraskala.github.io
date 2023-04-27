@@ -25,23 +25,22 @@
                 <label for="email">Email: <input type="email" id="email" name="form" required></label><br>
                 <label for="number">Phone Number (optional): <input type="tel" pattern="[0-9] {3}-[0-9] {3}-[0-9] {4}" name="form" id="number"></label><br>
                 <label for="description">What is your Question?</label>
-                <textarea rows="10" cols="20" id="description" required></textarea><br>
-                <button type="submit" class="submit">Submit</button>
+                <textarea rows="20" cols="70" id="description" required></textarea><br>
+                <button type="submit" class="form">Submit</button>
             </form>
             <p id="result">&nbsp;</p>
         </div>
     </main>
     <footer>
-        <p>
-            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
-            </a>
-            <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-                <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Validate webpage HTML!">
-            </a>
-        </p>
+        <p id="client-validation"></p>
+        <p id="firm-certification-client"></p>
     </footer>
     <script src="scripts/default.js"></script>
     <script src="scripts/contact_us.js"></script>
+    <script src="scripts/client_footer.js"></script>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
 </body>
 </html>

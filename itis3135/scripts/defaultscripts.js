@@ -110,100 +110,179 @@ $(function()
 })
 
 $(function() {
-    console.log(location.pathname);
-    console.log(location.pathname.split("/").splice(-1));
-    const pathname = String(location.pathname.split("/").splice(-1));
-    const links = {
-        "1": {
-            "url": "index.html",
-            "text": "Home",
-            "alt": "Example Homepage"
-        },
-        "2": {
-            "url": "introduction.html",
-            "text": "Introduction",
-            "alt": "Example Homepage"
-        },
-        "3": {
-            "url": "contract.html",
-            "text": "Contract",
-            "alt": "Contract Page"
-        },
-        "4": {
-            "url": "tables.html",
-            "text": "Tables",
-            "alt": "Simple and Complex Table Demonstration"
-        },
-        "5": {
-            "url": "forms.html",
-            "text": "Forms",
-            "alt": "Form"
-        },
-        "6": {
-            "url": "website_evaluations.html",
-            "text": "Website Evaluations",
-            "alt": "Website Evaluations"
-        },
-        "7": {
-            "url": "firstscripts.html",
-            "text": "First Scripts",
-            "alt": "First Scripts Assignment"
-        },
-        "8": {
-            "url": "polygons.html",
-            "text": "Polygons",
-            "alt": "Polygons Assignment"
-        },
-        "9": {
-            "url": "calculator_try.html",
-            "text": "Calculator Try",
-            "alt": "Part 1 of Activity 7"
-        },
-        "10": {
-            "url": "calculator_fcc.html",
-            "text": "Calculator FCC",
-            "alt": "Calculator freeCodeCamp"
-        },
-        "11": {
-            "url": "arrays.html",
-            "text": "Arrays",
-            "alt": "Arrays"
-        },
-        "12": {
-            "url": "slideshow.html",
-            "text": "Slideshow",
-            "alt": "Slideshow"
-        },
-        "13": {
-            "url": "project_1.html",
-            "text": "Project One",
-            "alt": "Project One"
-        },
-        "14": {
-            "url": "review1.html",
-            "text": "Review 1",
-            "alt": "Review 1"
-        },
-        "15": {
-            "url": "review2.html",
-            "text": "Review 2",
-            "alt": "Review 2"
-        }
-    };
-    
-    const linkSeparator = " | ";
-    let htmlString = "";
+    if ($('header').length == 1) 
+    {
+        console.log(location.pathname);
+        console.log(location.pathname.split("/").splice(-1));
+        const pathname = String(location.pathname.split("/").splice(-1));
+        const links = {
+            "1": {
+                "url": "index.html",
+                "text": "Home",
+                "alt": "Example Homepage"
+            },
+            "2": {
+                "url": "introduction.html",
+                "text": "Introduction",
+                "alt": "Example Homepage"
+            },
+            "3": {
+                "url": "contract.html",
+                "text": "Contract",
+                "alt": "Contract Page"
+            },
+            "4": {
+                "url": "tables.html",
+                "text": "Tables",
+                "alt": "Simple and Complex Table Demonstration"
+            },
+            "5": {
+                "url": "forms.html",
+                "text": "Forms",
+                "alt": "Form"
+            },
+            "6": {
+                "url": "website_evaluations.html",
+                "text": "Website Evaluations",
+                "alt": "Website Evaluations"
+            },
+            "7": {
+                "url": "firstscripts.html",
+                "text": "First Scripts",
+                "alt": "First Scripts Assignment"
+            },
+            "8": {
+                "url": "polygons.html",
+                "text": "Polygons",
+                "alt": "Polygons Assignment"
+            },
+            "9": {
+                "url": "calculator_try.html",
+                "text": "Calculator Try",
+                "alt": "Part 1 of Activity 7"
+            },
+            "10": {
+                "url": "calculator_fcc.html",
+                "text": "Calculator FCC",
+                "alt": "Calculator freeCodeCamp"
+            },
+            "11": {
+                "url": "arrays.html",
+                "text": "Arrays",
+                "alt": "Arrays"
+            },
+            "12": {
+                "url": "slideshow.html",
+                "text": "Slideshow",
+                "alt": "Slideshow"
+            },
+            "13": {
+                "url": "project_1.html",
+                "text": "Project One",
+                "alt": "Project One"
+            },
+            "14": {
+                "url": "review1.html",
+                "text": "Review 1",
+                "alt": "Review 1"
+            },
+            "15": {
+                "url": "review2.html",
+                "text": "Review 2",
+                "alt": "Review 2"
+            }
+        };
+        
+        const linkSeparator = " | ";
+        let htmlString = "";
 
-    for (var id in links) {
-        if (pathname === links[id]['url']) {
-            htmlString += links[id]['text'];
-        } else {
-            htmlString += '<a href=" ' + links[id]['url'] + ' ">' + links[id]['text'] + '</a>';
+        for (var id in links) {
+            if (pathname === links[id]['url']) {
+                htmlString += links[id]['text'];
+            } else {
+                htmlString += '<a href=" ' + links[id]['url'] + ' ">' + links[id]['text'] + '</a>';
+            }
+            if (Number(id) < Object.keys(links).length) {
+                htmlString += linkSeparator;
+            }
         }
-        if (Number(id) < Object.keys(links).length) {
-            htmlString += linkSeparator;
+
+        $('#siteLinks').html(htmlString);
+
+        // ----------------------------------------------------------------
+
+
+        const secondaryLinks = {
+            "1": {
+                "url": "stuff/MYWEBP@GE.htm",
+                "text": "Bad Webpage",
+                "alt": "Bad Webpage"
+            },
+            "2": {
+                "url": "Exercise/accessibility/Praskala-Activity_Accessibility.html",
+                "text": "Accessibility",
+                "alt": "Accessibility"
+            },
+            "3": {
+                "url": "hobby/",
+                "text": "Hobby",
+                "alt": "Hobby"
+            },
+            "4": {
+                "url": "client/index.html",
+                "text": "Client",
+                "alt": "Client"
+            },
+            "5": {
+                "url": "Exercise/Activity11/Praskala-Activity11.html",
+                "text": "Accordion Widget",
+                "alt": "Accordion Widget"
+            },
+            "6": {
+                "url": "Exercise/Activity12/Praskala-Activity12.html",
+                "text": "BxSlider",
+                "alt": "BxSlider"
+            },
+            "7": {
+                "url": "Exercise/Activity13/Praskala-Activity13.html",
+                "text": "XML to JSON",
+                "alt": "XML to JSON"
+            },
+            "8": {
+                "url": "Exercise/Activity14/Praskala-Activity14.html",
+                "text": "Speaker Data",
+                "alt": "Speaker Data"
+            },
+            "9": {
+                "url": "Exercise/Activity15/Praskala-Activity15.html",
+                "text": "Faculty",
+                "alt": "Faculty"
+            }
         }
+
+        let secondaryString = '';
+
+        for (let idTwo in secondaryLinks) 
+        {
+            if (pathname === secondaryLinks[idTwo]['url']) 
+            {
+                secondaryString += secondaryLinks[idTwo]['text'];
+            }
+            else 
+            {
+                secondaryString += `<a href=${secondaryLinks[idTwo]['url']}>${secondaryLinks[idTwo]['text']}</a>`
+            }
+
+            if (Number(idTwo) < Object.keys(secondaryLinks).length) 
+            {
+                secondaryString += linkSeparator;
+            }
+        }
+
+        $("#secondary").html(secondaryString);
     }
-
-    $('#siteLinks').html(htmlString);
+    else 
+    {
+        alert('Must be 1 and only 1 header element.');
+    }
 });

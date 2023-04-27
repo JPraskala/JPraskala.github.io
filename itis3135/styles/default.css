@@ -234,6 +234,9 @@ input[type="button"]
     margin-right: auto;
 }
 
+.examples {
+    margin-left: 600px;
+}
 
 @media (min-width: 576px) {}
 

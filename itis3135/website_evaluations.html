@@ -6,30 +6,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        h3 {
-            margin-left: 600px;
-        }
-    </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
     <header>
         <h1>Placeholder</h1>
         <nav id="siteLinks"></nav> <br> <br>
-        <nav>
-            <a href="stuff/MYWEBP@GE.htm">Bad Webpage</a> |
-            <a href="Exercise/Praskala-Activity_Accessibility.html">Accessibility</a> |
-            <a href="hobby/">Hobby</a> |
-            <a href="client/index.html">Client</a> |
-            <a href="Exercise/Activity11/Praskala-Activity11.html">Accordion Widget</a> |
-            <a href="Exercise/Activity12/Praskala-Activity12.html">BxSlider</a>
-        </nav>
+        <nav id="secondary"></nav>
     </header>
     <main>
         <h2 id="evaluation-header">Website Evaluations</h2>
         <section>
-            <h3><a href="https://www.youtube.com/">Good Example (YouTube)</a></h3>
+            <h3 class="examples"><a href="https://www.youtube.com/">Good Example (YouTube)</a></h3>
             <p>
                 YouTube is a popular site that is known for a wide variety of videos. It is one of the most iconic websites of all time, and it continues to be popular to this day. 
                 When evaluating the website, I noticed YouTube follows the CRAP principles really well. It has good constrast, repetition, alignment, and proximity. 
@@ -42,7 +30,7 @@
             </ul>
         </section>
         <section>
-            <h3><a href="https://www.art.yale.edu/apply/graduate-admission">Bad Example (Yale School of Art Admissions)</a></h3>
+            <h3 class="examples"><a href="https://www.art.yale.edu/apply/graduate-admission">Bad Example (Yale School of Art Admissions)</a></h3>
             <p>
                 Yale is prestigious school, however, this specific website they have is poorly structured. This website is for Graduate Admissions into their Art program. 
                 While the information presented might be useful, it does not properly follow the CRAP principles. I will explain why it does not follow the crap principles.
@@ -57,32 +45,12 @@
         <hr>
     </main>
     <footer>
-        <nav>
-            <a href="https://webpages.charlotte.edu/jpraskal/">CLT Website</a>
-            |
-            <a href="https://github.com/JPraskala">GitHub</a>
-            |
-            <a href="https://jpraskala.github.io/">GitHub Pages</a>
-            |
-            <a href="https://jpraskala.github.io/itis3135/">GitHub Course Page</a>
-            |
-            <a href="https://www.freecodecamp.org/JPraskala">freeCodeCamp</a>
-            |
-            <a href="https://www.codecademy.com/profiles/JPraskala">codeAcademy</a>
-            |
-            <a href="https://www.linkedin.com/in/jacob-praskala-48084421a/">LinkedIn</a>
-        </nav>
-        <p>
-            <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
-            </a>
-            <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-                <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Validate webpage HTML!">
-            </a>
-        </p>
-        <p>Designed by <a href="praskalaenterprise.com/">Praskala Enterprise</a></p>
+        <nav id="externalLinks"></nav>
+        <p id="validation"></p>
+        <p id="firm-certification"></p>
     </footer>
     <script src="scripts/defaultscripts.js"></script>
+    <script src="scripts/footer.js"></script>
     <script>		
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);

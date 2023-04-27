@@ -1,76 +1,95 @@
 $(function() 
 {
-    const pathname = String(location.pathname.split('/').splice(-1))
-    switch (pathname) 
+    if ($('header').length == 1) 
     {
-        case "index.html":
-            $('h1').html("Jacob's PyLearn")
-            break
-        case 'about.html':
-            $('h1').html("About Jacob's PyLearn")
-            break
-        case 'FAQ.html':
-            $('h1').html('FAQ')
-            break
-        case 'contact_us.html':
-            $('h1').html('Submit your Question')
-            break
-        case 'login.html':
-            $('h1').html('Login Here')
-            break
-    }
-
-    const pages = {
-        "1": {
-            "url": "index.html",
-            "text": 'Home',
-            "alt": "Home"
-        },
-        "2": {
-            "url": "about.html",
-            "text": "About Us",
-            "alit": "About Us"
-        },
-        "3": {
-            "url": "FAQ.html",
-            "text": "FAQ",
-            "alt": "FAQ"
-        },
-        "4": {
-            "url": "contact_us.html",
-            "text": "Contact Us",
-            "alt": "Contact Us"
-        },
-        "5": {
-            "url": "login.html",
-            "text": "Login",
-            "alt": "Login"
+        const pathname = String(location.pathname.split('/').splice(-1))
+        switch (pathname) 
+        {
+            case "index.html":
+                $('h1').html("Jacob's PyLearn")
+                break
+            case 'about.html':
+                $('h1').html("About Jacob's PyLearn")
+                break
+            case 'FAQ.html':
+                $('h1').html('FAQ')
+                break
+            case 'contact_us.html':
+                $('h1').html('Submit your Question')
+                break
+            case 'login.html':
+                $('h1').html('Login Here')
+                break
+            case 'dataTypes.html':
+                $('h1').html('Data Types')
+                break
+            case 'signup.html':
+                $('h1').html('Signup Here')
+                break
+            default:
+                alert('h1 not created or blank for this page.')
+                break
         }
+
+        const pages = {
+            "1": {
+                "url": "index.html",
+                "text": 'Home',
+                "alt": "Home"
+            },
+            "2": {
+                "url": "about.html",
+                "text": "About Us",
+                "alit": "About Us"
+            },
+            "3": {
+                "url": "FAQ.html",
+                "text": "FAQ",
+                "alt": "FAQ"
+            },
+            "4": {
+                "url": "contact_us.html",
+                "text": "Contact Us",
+                "alt": "Contact Us"
+            },
+            "5": {
+                "url": "login.html",
+                "text": "Login",
+                "alt": "Login"
+            },
+            "6": {
+                "url": "signup.html",
+                "text": "Signup",
+                "alt": "Signup"
+            }
+        }
+
+        const linkSeparator = ' | '
+        let htmlString = ''
+
+        for (let id in pages) 
+        {
+            if (pathname === pages[id]['url']) 
+            {
+                htmlString += pages[id]["text"]
+            }
+            else 
+            {
+                htmlString += `<a href="${pages[id]['url']}"> ${pages[id]['text']}</a>`
+            }
+
+            if (Number(id) < Object.keys(pages).length) 
+            {
+                htmlString += linkSeparator
+            }
+
+            
+        }
+
+        $("#pages").html(htmlString)
     }
-
-    const linkSeparator = ' | '
-    let htmlString = ''
-
-    for (let id in pages) 
+    else 
     {
-        if (pathname === pages[id]['url']) 
-        {
-            htmlString += pages[id]["text"]
-        }
-        else 
-        {
-            htmlString += `<a href="${pages[id]['url']}"> ${pages[id]['text']}</a>`
-        }
-
-        if (Number(id) < Object.keys(pages).length) 
-        {
-            htmlString += linkSeparator
-        }
-
-        
+        alert('Must be 1 and only 1 header element')
     }
-
-    $("#pages").html(htmlString)
-
-    $('footer').append(`<p>Designed by <a href="https://webpages.charlotte.edu/jpraskal/itis3135/praskalaenterprise.com/">Praskala Enterprise</a> &copy; 2023</p>`)
 })
