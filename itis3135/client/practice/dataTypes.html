@@ -4,26 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Types</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> 
+    <title>Python DataTypes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="/client/styles/default.css">
+    <link rel="stylesheet" href="/client/styles/practice.css">
 </head>
 <body>
     <header>
         <h1>&nbsp;</h1>
-        <nav id="pages"></nav>
+        <nav id="practice-pages"></nav>
     </header>
     <main>
         <div class="container">
-
+            <section id="introduction">
+                <h2>What are DataTypes?</h2>
+                <p>
+                    DataTypes are known as a collection of data that the programmer can use to build programs. Some dataTypes include integers, 
+                    floats/doubles, strings, booleans, and more. Which datatype to use depends on the situation. Python is a dynamically typed language meaning 
+                    that if you declare a variable of one datatype, it can later be changed to another. For example, if I declare a variable called name, and it is set to a 
+                    string of "Jacob", it can later be changed to a boolean or any other datatype you want. In constrast, a language like Java is a statically typed language 
+                    meaning that once a variable is declared with a specific datatype, it must always be that datatype. 
+                    Note: To declare comments in Python, you need to use # instead of //.
+                </p>
+            </section>
+            <section id="example">
+                <h2>How do I declare a variable in Python?</h2>
+                <p>
+                    Declaring a variable in Python is easy. You must first specify the name of the variable like variableName, and then you need 
+                    to give it a value. See the example below.
+                </p>
+                <code>
+                    a = True  # Note that the T is capitalized in True. 
+                    b = 'Hello'
+                    c = 1
+                    d = 1.5
+                </code>
+                <p>
+                    The variable a is declared as a boolean set to true. The variable b is declared as a string set to Hello (Note that 
+                    strings in Python can be in either single quotes or double quotes). The variable c is declared as an integer set to 1, and 
+                    the variable d is declared as a float set to 1.5.
+                </p>
+            </section>
+            <section id="practice-question-one">
+                <h2>Try it yourself</h2>
+                <p>
+                    Let us practice. Declare a variable of your choosing, and set it to an appropriate value.
+                </p>
+                <form action="#" class="practice-forms" id="dataTypeForm" target="_self">
+                    <label for="dataType">
+                        Select a DataType:
+                        <select id="dataType">
+                            <option value="#">Select a datatype</option>
+                            <option value="integer">Integer</option>
+                            <option value="string">String</option>
+                            <option value="boolean">Boolean</option>
+                            <option value="float">Float</option>
+                        </select>
+                    </label>
+                    <label for="variableName">Variable: <input type="text" id="variableName" name="form" required></label> <label for="variableValue">= <input type="text" id="variableValue" name="form" required></label>
+                    <button type="submit" id="dataTypeSubmit">Submit</button>
+                </form>
+                <p id="result">&nbsp;</p>
+            </section>
         </div>
     </main>
-    <footer></footer>
-    <script src="/client/scripts/default.js"></script>
-    <script src="practiceScripts/dataTypes.js"></script>
-    <script>
-        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
-        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-    </script>
+    <footer>
+        <p id="mainPage"></p>
+        <p id="client-validation"></p>
+        <p id="firm-certification-client"></p>
+    </footer>
+    <script src="/client/scripts/practice.js"></script>
+    <script src="/client/scripts/practiceScripts/dataTypes.js"></script>
+    <script src="/client/scripts/client_footer.js"></script>
 </body>
 </html>

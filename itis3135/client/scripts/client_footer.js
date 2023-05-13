@@ -1,5 +1,6 @@
 $(function()
 {
+    const pathname = String(location.pathname.split("/").splice(-1));
     if ($('footer').length == 1) 
     {
         if ($('#client-validation').length == 1) 
@@ -31,6 +32,19 @@ $(function()
         else 
         {
             alert('Must be 1 and only 1 element with an id of firm-certification-client');
+        }
+
+        if ($('#practice').length == 1 && (pathname == 'about.html' || pathname == 'index.html')) 
+        {
+            $('#practice').html(
+                "<a href='practice/dataTypes.html'>Click here to start practicing.</a>"
+            );
+        }
+        
+
+        if ($('#mainPage').length == 1) 
+        {
+            $('#mainPage').html("<a href='/client/index.html'>Click to go back to the home page.</a>");
         }
     }
     else 

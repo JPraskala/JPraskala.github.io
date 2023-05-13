@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="/client/styles/default.css">
+    <link rel="stylesheet" href="/client/styles/practice.css">
+</head>
+<body>
+    <header>
+        <h1>&nbsp;</h1>
+        <nav id="practice-pages"></nav>
+    </header>
+    <main>
+        <div class="container">
+            <section id="loops">
+                <h2>What are loops?</h2>
+                <p>
+                    Loops are a way to execute a code multiple times throughout a program. There are two different kinds of loops 
+                    in Python. There is the While Loop, and there is the For Loop. Click on this <a href="https://www.geeksforgeeks.org/loops-in-python/" target="_blank">site</a> to learn 
+                    more about loops in Python.
+                </p>
+                <code>
+                    i = 0
+                    while i &lt; 5:
+                        print(i)
+                    # Example of a while loop. It loops while the condition is true.
+
+                    for i in range (0, 10):
+                        # Example of a for loop. It loops while the number is in range. In this case, it'll loop from 0 - 9.
+                </code>
+            </section>
+            <secton id="loopQuestion">
+                <h2>Question</h2>
+                <p>
+                    If I give you the following code below, how many times will it print? Answer must be a number.
+                </p>
+                <code>
+                    i = 10
+                    while i > 1:
+                        print(i)
+                </code>
+            </secton>
+            <form action="#" class="practice-forms" id="loopForm" target="_self" method="get">
+                <label for="input">Type your answer here: <input type="number" id="input" name="loop" required></label><br>
+                <button type="submit" id="loopSubmit">Submit</button>
+            </form>
+            <p id="loopResult">&nbsp;</p>
+        </div>
+    </main>
+    <footer>
+        <p id="mainPage"></p>
+        <p id="client-validation"></p>
+        <p id="firm-certification-client"></p>
+    </footer>
+    <script src="/client/scripts/practice.js"></script>
+    <script src="/client/scripts/practiceScripts/loops.js"></script>
+    <script src="/client/scripts/client_footer.js"></script>
+</body>
+</html>

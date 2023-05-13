@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If/Else Statements.</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="/client/styles/default.css">
+    <link rel="stylesheet" href="/client/styles/practice.css">
+</head>
+<body>
+    <header>
+        <h1>&nbsp;</h1>
+        <nav id="practice-pages"></nav>
+    </header>
+    <main>
+        <div class="container">
+            <section id="explanation">
+                <h2>What is an if/else statement.</h2>
+                <p>
+                    An if/else statement takes in a Boolean expression and checks if the condition is true or false. 
+                    If the condition is true, then the code executes everything that is in the if block. If the condition is false, 
+                    then it will execute everything in the else block.
+                </p>
+                <code>
+                    if 5 > 3:
+                        # Execute if true
+                    else:
+                        # Execute if false
+                </code>
+            </section>
+            <section id="elif">
+                <h2>Explaining the elif statement (else if)</h2>
+                <p>
+                    An if/else statement is not limited to just an if statement and an else statement. Often, programmers will 
+                    include an else if statement to better control the flow of a program. In Python, the else if statement is 
+                    declared as elif. An example is below.
+                </p>
+                <code>
+                    if 5 == 3:
+                        # Will execute if true
+                    elif 5 > 3:
+                        # Will execute if the first statement is false and this statement is true
+                    else:
+                        # Will execute if both statements above are false
+                </code>
+                <p>
+                    Keep in mind that the elif statement will only execute if the if statement is false and the elif statement is true. If the if statement is true, then 
+                    it will execute the code in there and then back out of the if/else statement even if the elif statement is true.
+                </p>
+            </section>
+            <section id="extra">
+                <h2>Additional Information</h2>
+                <p>
+                    Sometimes, you can have two if statements that are independent from each other. Here is an example.
+                </p>
+                <code>
+                    if 5 > 3:
+                        # execute this code 
+                    
+                    if name == 'Jake':
+                        # execute this code 
+                    
+                    # These two if statements are independent from each other.
+                </code>
+            </section>
+            <section id="question">
+                <h2>Question</h2>
+                <p>
+                    If I have this if/else statement below, which statement will be executed?
+                </p>
+                <code>
+                    if 5 == 4:
+                        print('If statement is true')
+                    elif 5 &lt; 4:
+                        print('First elif statement is true.')
+                    elif 5 >= 4:
+                        print('Second elif statement is true.')
+                    else:
+                        print('else statement is true')
+                </code>
+                <form action="#" class="practice-forms" id="ifelseForm" target="_self">
+                    <label for="if">If statement: <input type="radio" id="if" name="ifelse"></label><br>
+                    <label for="firstElif">First elif statement: <input type="radio" id="firstElif" name="ifelse"></label><br>
+                    <label for="secondElif">Second elif statement: <input type="radio" id="secondElif" name="ifelse"></label><br>
+                    <label for="else">Else statement: <input type="radio" id="else" name="ifelse"></label><br>
+                    <button type="submit" id="ifelseSubmit">Submit</button>
+                </form>
+                <p id="ifelseResult">&nbsp;</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p id="mainPage"></p>
+        <p id="client-validation"></p>
+        <p id="firm-certification-client"></p>
+    </footer>
+    <script src="/client/scripts/practice.js"></script>
+    <script src="/client/scripts/practiceScripts/ifelse.js"></script>
+    <script src="/client/scripts/client_footer.js"></script>
+</body>
+</html>

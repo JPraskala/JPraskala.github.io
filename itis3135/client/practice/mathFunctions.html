@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Functions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="/client/styles/default.css">
+    <link rel="stylesheet" href="/client/styles/practice.css">
+</head>
+<body>
+    <header>
+        <h1>&nbsp;</h1>
+        <nav id="practice-pages"></nav>
+    </header>
+    <main>
+        <div class="container">
+            <section id="mathFunctions">
+                <h2>What are Math Functions?</h2>
+                <p>
+                    Math functions are function in Python that allow us to work with numerical data. 
+                    Some functions include the following: math.ceil, math.floor, math.abs, math.comb, etc. For more information, 
+                    click on this <a href="https://docs.python.org/3/library/math.html">site</a>.
+                </p>
+                <code>
+                    a = 5.7
+                    print(Math.floor(a))
+                    # You can think of Math.floor as removing the decimals. It rounds the number down. 
+                    In this case, Math.floor(a) would output 5.
+
+                    print(Math.ceil(5.7))
+                    # Math.ceil is the opposite of Math.floor. In this case, Math.ceil(5.7) would output 6.
+
+                    b = 25
+                    print(isnan(b))
+                    # isnan is a mathematical boolean function that checks whether a value is a number or not. It returns true if it is 
+                    not a number, and it returns false if it is a number. In this case, this would output false as b is a number.
+
+                    # These are some basic examples of mathematical functions in Python.
+                </code>
+            </section>
+            <section id="mathQuestion">
+                <h2>Math Question</h2>
+                <p>
+                    Suppose I have a variable in Python named year with a value of 2023. Using the mathematical functions provided in the 
+                    link above, check to see if this number is infinity or not. Answer yes or no below.
+                </p>
+            </section>
+            <form action="#" class="practice-forms" id="mathForm" target="_self" method="get">
+                <label for="yes">Yes: <input type="radio" id="yes" name="inf"></label><br>
+                <label for="no">No: <input type="radio" id="no" name="inf"></label><br>
+                <button type="submit" id="mathSubmit">Submit</button>
+            </form>
+            <p id="mathResult"></p>
+        </div>
+    </main>
+    <footer>
+        <p id="mainPage"></p>
+        <p id="client-validation"></p>
+        <p id="firm-certification-client"></p>
+    </footer>
+    <script src="/client/scripts/practice.js"></script>
+    <script src="/client/scripts/practiceScripts/mathFunctions.js"></script>
+    <script src="/client/scripts/client_footer.js"></script>
+</body>
+</html>

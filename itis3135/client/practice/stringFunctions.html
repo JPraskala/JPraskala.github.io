@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>String Functions</title>
+    <link rel="stylesheet" href="/client/styles/default.css">
+    <link rel="stylesheet" href="/client/styles/practice.css">
+</head>
+<body>
+    <header>
+        <h1>&nbsp;</h1>
+        <nav id="practice-pages"></nav>
+    </header>
+    <main>
+        <div class="container">
+            <section id="stringFunctions">
+                <h2>What are String Functions?</h2>
+                <p>
+                    String Functions allow programmers to manipulate character strings. 
+                    As a reminder, a string is a collection of characters. In Python, strings can be in either 
+                    single quotes or double quotes. Some string functions include upper, lower, isalpha, isdigit, etc. Click on this 
+                    <a href="https://www.geeksforgeeks.org/python-string-methods/">site</a> to learn more about string functions.
+                </p>
+                <code>
+                    # Suppose I have the following line below
+                    text = 'Jacob'
+                    # We can use the text variable now to call some string functions.
+
+                    print(text.upper())
+                    # This will convert Jacob to Jacob
+
+                    print(text.lower())
+                    # This will change the value of text to jacob 
+
+                    print(text.isalpha())
+                    # This will output true because all the characters are alphabets.
+                    # If there is a number or a space, then it will output false.
+
+                    print(text.isdigit())
+                    # This will output false because not all the characters are numbers.
+                </code>
+            </section>
+            <section id="stringQuestion">
+                <h2>String Question</h2>
+                <p>
+                    Suppose I have a variable named name with a value of Jacob. Using the string function endswith, I need to know if 
+                    it is true or false that the string ends with the letter o. Use the site above for help.
+                </p>
+                <form action="#" class="practice-forms" id="stringForm" target="_self">
+                    <label for="true">True: <input type="radio" id="true" name="string"></label><br>
+                    <label for="false">False: <input type="radio" id="false" name="string"></label><br>
+                    <button type="submit" id="stringSubmit">Submit</button>
+                </form>
+                <p id="stringResult"></p>
+            </section>
+            <section id="stringsContinued">
+                <h2>Extra Practice</h2>
+                <p>
+                    To get some extra practice, I recommend clicking on this <a href="https://www.geeksforgeeks.org/python-string-exercise/" target="_blank">site</a> from
+                    geeksforgeeks. They have numerous exercises involving strings that can enhance your ability at using them. 
+                </p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p id="mainPage"></p>
+        <p id="client-validation"></p>
+        <p id="firm-certification-client"></p>
+    </footer>
+    <script src="/client/scripts/practice.js"></script>
+    <script src="/client/scripts/practiceScripts/stringFunctions.js"></script>
+    <script src="/client/scripts/client_footer.js"></script>
+</body>
+</html>

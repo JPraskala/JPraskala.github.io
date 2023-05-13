@@ -17,15 +17,9 @@ $(function()
             case 'contact_us.html':
                 $('h1').html('Submit your Question')
                 break
-            case 'login.html':
-                $('h1').html('Login Here')
-                break
-            case 'dataTypes.html':
-                $('h1').html('Data Types')
-                break
-            case 'signup.html':
-                $('h1').html('Signup Here')
-                break
+            case 'additionalPractice.html':
+                $('h1').html('Additional Resources');
+                break;
             default:
                 alert('h1 not created or blank for this page.')
                 break
@@ -53,14 +47,9 @@ $(function()
                 "alt": "Contact Us"
             },
             "5": {
-                "url": "login.html",
-                "text": "Login",
-                "alt": "Login"
-            },
-            "6": {
-                "url": "signup.html",
-                "text": "Signup",
-                "alt": "Signup"
+                "url": "additionalPractice.html",
+                "text": "Extra Resources",
+                "alt": "Extra Resources"
             }
         }
 

@@ -1,0 +1,26 @@
+{"practiceSites": [
+    {
+        "url": "/client/Practice/dataTypes.html",
+        "text": "DataTypes"
+    },
+    {
+        "url": "/client/Practice/ifelse.html",
+        "text": "If/Else Statements"
+    },
+    {
+        "url": "/client/Practice/loops.html",
+        "text": "Loops"
+    },
+    {
+        "url": "/client/Practice/functions.html",
+        "text": "Functions"
+    },
+    {
+        "url": "/client/Practice/mathFunctions.html",
+        "text": "Math Functions"
+    },
+    {
+        "url": "/client/Practice/stringFunctions.html",
+        "text": "String Functions"
+    }
+]}

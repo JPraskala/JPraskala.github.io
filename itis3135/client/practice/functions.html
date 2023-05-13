@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="/client/styles/default.css">
+    <link rel="stylesheet" href="/client/styles/practice.css">
+</head>
+<body>
+    <header>
+        <h1>&nbsp;</h1>
+        <nav id="practice-pages"></nav>
+    </header>
+    <main>
+        <div class="container">
+            <section id="functions">
+                <h2>What are Python Functions?</h2>
+                <p>
+                    Python offers functions to allow a programmer to organize their program. These functions can be used to 
+                    control the flow of the program and return certain values. For more information, click on this <a href="https://www.w3schools.com/python/python_functions.asp" target="_blank">site</a>
+                    to learn more about functions in Python. 
+                </p>
+                <code>
+                    # Each function in Python is declared with the def keyword.
+                    def example():
+                        return 5
+                    # This function returns the number 5. This means this function can be used in another function.
+
+                    def secondExample():
+                        print(5)
+                    # This function does not return anything. This means this is a void function. A void function 
+                    is a function that does not return a value. It cannot be used in an if statement.
+                    
+                    def thirdExample(parameterOne, parameterTwo):
+                        return parameterOne * parameterTwo
+                    # This function takes in two parameters meaning when the user calls this function, the user will have to 
+                    give the function two arguments, or it will throw an error.
+
+                    def fourthExample(parameterOne: int, parameterTwo: int):
+                        return parameterOne * parameterTwo
+                    # In this example, we are stating that both parameters should be of type integer. It is not requrired 
+                    to put this in, but it can be useful
+
+                    def fifthExample(parameterOne: int, parameterTwo: int) -> int:
+                        return parameterOne * parameterTwo
+                    # This example states which dataType we are returning in the function. Using the arrow notation, 
+                    we are stating that we want to return an integer. This part is optional.
+
+                    def sixthExample() -> None:
+                        print(None)
+                    # If None is specified in the arrow notation, then it is a void function.
+                </code>
+            </section>
+            <section id="funtionQuestion">
+                <p>
+                   If I have a function called add that takes in two parameters a and b. How can I return the sum of those two variables?
+                </p>
+                <form action="#" class="practice-forms" id="functionForm" target="_self">
+                    <label for="answer">Answer (case and space sensitive): <input type="text" id="answer" name="function" required></label><br>
+                    <button type="submit" id="functionSubmit">Submit</button>
+                </form>
+                <p id="functionResult"></p>
+            </section>
+            <section id="continuation">
+                <h2>Additional Information</h2>
+                <p>
+                    To get good at functions. I would recommend clicking on this <a href="https://www.w3schools.com/python/exercise.asp?filename=exercise_functions1" target="_blank">source</a> 
+                    from w3schools. They have 5 basic exercises that can be helpful for a beginner.
+                </p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p id="mainPage"></p>
+        <p id="client-validation"></p>
+        <p id="firm-certification-client"></p>
+    </footer>
+    <script src="/client/scripts/practice.js"></script>
+    <script src="/client/scripts/practiceScripts/functions.js"></script>
+    <script src="/client/scripts/client_footer.js"></script>
+</body>
+</html>

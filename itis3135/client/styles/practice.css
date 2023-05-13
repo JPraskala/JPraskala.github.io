@@ -1,0 +1,29 @@
+code {
+    display: block;
+    white-space: pre-wrap;
+    line-height: 2;
+    border: 1px solid black;
+    background-color: gray;
+    color: lightgreen;
+}
+
+.practice-forms {
+    display: block;
+    white-space: pre-line;
+    line-height: 1.5;
+}
+
+button[type='submit'] {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+input[type='text'], select, input[type='number'] {
+    border: none;
+    border-radius: 15px;
+    padding: 7px;
+}
